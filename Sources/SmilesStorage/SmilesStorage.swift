@@ -8,6 +8,10 @@ public class SmilesStorage {
         UserDefaults.standard
     }
     
+    public init() {
+        
+    }
+    
     // MARK: - Methods
     
     func string(forKey key: String) -> String? {
