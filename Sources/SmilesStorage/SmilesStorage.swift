@@ -14,23 +14,23 @@ public class SmilesStorage {
     
     // MARK: - Methods
     
-    func string(forKey key: String) -> String? {
+    public func string(forKey key: String) -> String? {
         defaults.string(forKey: key)
     }
     
-    func data(forKey key: String) -> Data? {
+    public func data(forKey key: String) -> Data? {
         defaults.data(forKey: key)
     }
     
-    func bool(forKey key: String) -> Bool? {
+    public func bool(forKey key: String) -> Bool? {
         defaults.bool(forKey: key)
     }
     
-    func set(_ value: Any, forKey: String) {
+    public func set(_ value: Any, forKey: String) {
         defaults.set(value, forKey: forKey)
     }
     
-    func remove(_ forKey: String) {
+    public func remove(_ forKey: String) {
         defaults.removeObject(forKey: forKey)
     }
 }
